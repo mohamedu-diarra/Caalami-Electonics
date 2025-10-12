@@ -5,13 +5,23 @@
 }
 
 
+@font-face {
+    font-family: "Nooca1aad";
+    src: url(/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "Nooca2aad";
+    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+
 :root{
     --color1: #191e29;
     --color2: #132046;
     --color3:  #01C38D;
     --color4: #696E79;
     --color5: #ffff;
-    
+
 
 
 
