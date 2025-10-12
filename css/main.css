@@ -3,3 +3,64 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right:auto;
+
+}
+
+
+
+
+
+
+/* media queries */
+
+/* xsml screen */
+@media (min-width: 480px) {
+    .container{
+        max-width: 400px;
+    }
+}
+
+/* sml screen */
+@media (min-width: 480px) and (max-width: 767px){
+    .container{
+        max-width: 700px;
+    }
+}
+
+/* md screen */
+@media (min-width: 767px) and (max-width: 992px){
+    .container{
+        max-width: 900px;
+    }
+}
+
+/* LG screen */
+@media (min-width: 992px) and (max-width: 1200px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+/* XlG screen */
+@media (min-width: 1200px) and (max-width: 1400px){
+    .container{
+        max-width: 1150px;
+    }
+}
+
+/* XXlG screen */
+@media (min-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
