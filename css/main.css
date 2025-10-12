@@ -44,8 +44,17 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 100px 2.5fr 1fr;
+    grid-template-columns: 300px 2.5fr 1fr;
     grid-template-rows: repeat(1, auto);
+}
+.container section.nav nav div.logo{
+    height: 40px;
+    background-color: #01C38D;
+
+}
+.container section.nav nav div.logo img{
+    width: 100px;
+    height: 100px;
 }
 
 
