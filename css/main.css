@@ -95,7 +95,7 @@ section.nav nav div.btnnav{
     align-items: center;
 }
 section.nav nav div.btnnav button{
-    width: 100px;
+    width: 110px;
     height: 40px;
     margin-left: 20px;
     border: none;
@@ -111,6 +111,9 @@ section.nav nav div.btnnav button.cart{
     background-color: var(--color3);
     border-radius: 14px;
     transition: all 0.5s ease-in-out;
+}
+section.nav nav div.btnnav button.cart ion-icon{
+font-size: 16px;
 }
 section.nav nav div.btnnav button.cart:hover{
     background-color: #132046;
