@@ -5,6 +5,19 @@
 }
 
 
+:root{
+    --color1: #191e29;
+    --color2: #132046;
+    --color3:  #01C38D;
+    --color4: #696E79;
+    --color5: #ffff;
+    
+
+
+
+}
+
+
 .container{
     width: 100%;
     height: 100%;
