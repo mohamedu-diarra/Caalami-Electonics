@@ -26,20 +26,15 @@
 
 .container{
     width: 100%;
-    height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 150px;
     margin-left: auto;
     margin-right:auto;
-
 }
-
 /* nav style */
 section.nav{
     width: 100%;
     height: 100%;
     background-color: var(--color2);
-    padding: 20px;
 }
 section.nav nav{
     width: 100%;
@@ -48,20 +43,17 @@ section.nav nav{
     grid-template-columns: 300px 2.5fr 1fr;
     grid-template-rows: repeat(1, auto);
     gap: 20px;
-    margin-bottom: 20px;
 }
 section.nav nav div.logo{
-    height: 40px;
+    width: 100%;
+    height: 150px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 50px;
-
-
 }
 section.nav nav div.logo img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     
 }
 section.nav nav ul.links{
@@ -115,6 +107,421 @@ section.nav nav div.btnnav button.cart:hover{
     background-color: #132046;
     border: solid 1px var(--color5);
 }
+/*About style*/
+.about{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+}
+.about .top {
+    width: 100%;
+    height: 300px;
+    background-color:var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+}
+.top h1 {
+    font-family: "Nooca1aad";
+    font-size: 40px;
+    color:var(--color5)
+}
+.top h3{
+    font-family: "Nooca2aad";
+    font-size: 14px;
+    color: var(--color3);
+    text-align: center;
+}
+.about .down{
+    width: 100%;
+    padding: 5px;
+    background-color: var(--color1);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.about .down .dl{
+    width: 100%;
+    height: 600px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+}
+.down .dl h1{
+  font-size: 27px;
+  font-family: "Nooca1aad";
+  color: var(--color5);
+}
+.down .dl p{
+    font-size: 18px;
+    font-family: "Nooca2aad";
+    color: var(--color4);
+    text-align: center;
+    padding-left: 20px;
+}
+.down .dr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.down .dr img{
+    width: 400px;
+    height: 400px;
+    border: 2px dashed var(--color3);
+    border-radius: 200px;
+}
+/*Meet-section*/
+.meet {
+    width: 100%;
+    height: 100%;
+     background-color: var(--color2);
+     padding-top: 5%;
+}
+.meet h2{
+    font-size: 30px;
+    font-family: "Nooca1aad";
+    color: var(--color5);
+    text-align: center;
+}
+.meet .pics{
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.pics .sm{
+  width: 100%;
+  height: 100%;
+  background-color: var(--color2);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+.sm img {
+    width: 300px;
+    height: 320px;
+    border: 2px solid var(--color5);
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.sm img:hover{
+    transform: translate(5px,-5px);
+    box-shadow: 0px 0px 10px 3px var(--color3);
+}
+.sm:nth-child(1) img {
+  border-radius: 150px 150px 3px 150px;
+}
+.sm:nth-child(2) img {
+  border-radius: 150px ;
+}
+.sm:nth-child(3) img {
+  border-radius: 150px 150px 150px 3px  ;
+}
+.sm  h3{
+   font-family: "Nooca1aad";
+   font-size : 20px;
+   color: var(--color3);
+}
+.sm p{
+    font-size: 16px;
+    font-family: "Nooca2aad";
+    color: var(--color5);
+}
+
+/* Contact us */
+.contact{
+    width: 100%;
+    height: 100%;
+}
+.contact .p-contact{
+    width: 100%;
+    height: 700px;
+    background-color: var(--color1);
+    padding: 3% 0%;
+}
+.p-contact h2{
+     font-family: "Nooca1aad";
+    font-size: 35px;
+    color:var(--color5);
+    text-align:center;
+}
+.p-contact p{
+   font-family: "Nooca2aad";
+    font-size: 18px;
+    color: var(--color3);
+    text-align: center;
+}
+.p-contact .form {
+    width: 100%;
+    height: 500px;
+    padding: 2%;
+    padding-left: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.p-contact .form form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+}
+.p-contact .form form input{
+   width: 80%;
+   height: 40px;
+   border: none;
+   outline: none;
+   border: 1.3px solid var(--color3);
+   border-radius: 10px;
+   font-size: 14px;
+    font-family: "Nooca2aad";
+    padding-left: 8px;
+    color: var(--color1);
+    margin: 7px 0%;
+}
+.p-contact .form form input#submit{
+    background-color: var(--color3);
+    color: var(--color5);
+    font-size: 18px;
+    text-align: center;
+    border-radius: 40px;
+    width: 50%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.p-contact .form form input#submit:hover{
+    transform: translate(3px,-2px);
+    background-color: var(--color1);
+
+}
+.p-contact .form form textarea{
+    width: 80%;
+   height: 40px;
+   border: none;
+   outline: none;
+   border: 1.3px solid var(--color3);
+   border-radius: 10px;
+   font-size: 14px;
+   font-family: "Nooca2aad";
+   color: var(--color1);  
+   margin: 7px 0%;
+}
+.p-contact .form form textarea#message{
+    height: 100px;
+    padding-left: 8px;
+    padding-top: 5px;
+}
+.p-contact .form form .tea{
+    width: 100% ;
+    padding-left: 10%;
+}
+.p-contact .form form .tea input{
+    width: 45%;
+    font-size: 14px;
+    font-family: "Nooca2aad";
+    padding-left: 8px;
+    color: var(--color1);
+}
+.p-contact .form .set{
+    width: 50%;
+    height: 300px;
+    background-image: url(/sawiro/Newsletter01.jpg);
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    border: 1px solid var(--color3);
+    border-radius: 15px;
+}
+.p-contact .form .set h2 {
+    font-size: 30px;
+}
+.p-contact .form .set button{
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border: 1px solid var(--color3);
+    border-radius: 20px;
+    background-color: var(--color3);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.p-contact .form .set button.submit:hover{
+   background-color: var(--color2);
+   color: var(--color3);
+   transform: translate(2px, 3px);
+}
+.p-contact .form .set input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border: 1px solid var(--color3);
+    border-radius: 20px;
+    margin: 2% 0%;
+    font-size: 14px;
+    font-family: "Nooca2aad";
+    color: var(--color1);
+    padding-left: 3%;
+}
+.p-contact .form .set button.submit{
+    font-size: 15px;
+    font-family: "Nooca2aad";
+    color: var(--color5);
+}
+.p-contact  .partt{
+    width: 100%;
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: auto;
+    background-color: var(--color2);
+    padding-left: 3%;
+}
+.p-contact .partt .par{
+    width: 325px;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px solid var(--color3);
+    background-image: url(/sawiro/Par.pc.jpg);
+}
+.p-contact .partt .par h2{
+    font-size: 20px;
+    font-family: "Nooca2aad";
+    font-weight: bold;
+    padding-top:7%;
+    padding-bottom: 10px;
+}
+.p-contact .partt .par ion-icon{
+     font-size: 25px; 
+     color: var(--color2);
+}
+.p-contact .partt .par p{
+    font-size: 15px;
+    color: var(--color5);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hero style */
+section.hero_sec{
+    width: 100%;
+    height: 100%;
+    background-color: #132046;
+    padding: 3%;
+}
+section.hero_sec div.parts{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: nowrap row;
+
+}
+section.hero_sec div.parts div.part{
+    width: calc(95% / 2);
+    
+}
+
+section.hero_sec div.parts div.part.right div.head h2{
+    font-family: "Nooca1aad";
+    font-size: 43px;
+    color: var(--color5);
+}
+section.hero_sec div.parts div.part.right div.head h2 span{
+    color: var(--color3);
+}
+section.hero_sec div.parts div.part.right p.desc{
+      width: 60%;
+  width: 550px;
+    font-family: "Nooca2aad";
+  font-size: 20px;
+  color: var(--color4);
+  line-height: 32px;
+  text-transform: capitalize;
+  margin: 15px 0px;
+}
+section.hero_sec div.parts div.part.right div.action{
+    height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: nowrap column;
+  margin: 40px 0px;
+}
+section.hero_sec div.parts div.part.right div.action button{
+    width: 140px;
+    height: 40px;
+    border:  none;
+    outline: none;
+    border-radius: 7px;
+    background-color: var(--color3);
+    color: var(--color5);
+    font-family: "Nooca2aad";
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+section.hero_sec div.parts div.part.right div.action button:hover{
+    background-color: var(--color2);
+    border: solid 1px var(--color5);
+}
+section.hero_sec div.parts div.part.left{
+  
+}
+section.hero_sec div.parts div.part.left img{
+    width: 340px;
+    height: 240px;
+    border-radius: 7px;
+    position: relative;
+    margin-left: 50px ;
+}
+section.hero_sec div.parts div.part.left img:nth-child(2){
+ bottom: 100px;
+ left: 20px;
+ transition: all 0.5s ease-in-out;
+
+}
+section.hero_sec div.parts div.part.left img:nth-child(2):hover{
+    transform: skew(-8deg, -1deg);
+}
+section.hero_sec div.parts div.part.left img:nth-child(1){
+     transition: all 0.5s ease-in-out;
+}
+section.hero_sec div.parts div.part.left img:nth-child(1):hover{
+transform: skew(8deg, 1deg);
+}
 
 
 
@@ -166,4 +573,3 @@ section.nav nav div.btnnav button.cart:hover{
         max-width: 1200px;
     }
 }
-
