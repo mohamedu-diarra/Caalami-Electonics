@@ -433,6 +433,96 @@ section.nav nav div.btnnav button.cart:hover{
 
 
 
+/* hero style */
+section.hero_sec{
+    width: 100%;
+    height: 100%;
+    background-color: #132046;
+    padding: 3%;
+}
+section.hero_sec div.parts{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: nowrap row;
+
+}
+section.hero_sec div.parts div.part{
+    width: calc(95% / 2);
+    
+}
+
+section.hero_sec div.parts div.part.right div.head h2{
+    font-family: "Nooca1aad";
+    font-size: 43px;
+    color: var(--color5);
+}
+section.hero_sec div.parts div.part.right div.head h2 span{
+    color: var(--color3);
+}
+section.hero_sec div.parts div.part.right p.desc{
+      width: 60%;
+  width: 550px;
+    font-family: "Nooca2aad";
+  font-size: 20px;
+  color: var(--color4);
+  line-height: 32px;
+  text-transform: capitalize;
+  margin: 15px 0px;
+}
+section.hero_sec div.parts div.part.right div.action{
+    height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: nowrap column;
+  margin: 40px 0px;
+}
+section.hero_sec div.parts div.part.right div.action button{
+    width: 140px;
+    height: 40px;
+    border:  none;
+    outline: none;
+    border-radius: 7px;
+    background-color: var(--color3);
+    color: var(--color5);
+    font-family: "Nooca2aad";
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+section.hero_sec div.parts div.part.right div.action button:hover{
+    background-color: var(--color2);
+    border: solid 1px var(--color5);
+}
+section.hero_sec div.parts div.part.left{
+  
+}
+section.hero_sec div.parts div.part.left img{
+    width: 340px;
+    height: 240px;
+    border-radius: 7px;
+    position: relative;
+    margin-left: 50px ;
+}
+section.hero_sec div.parts div.part.left img:nth-child(2){
+ bottom: 100px;
+ left: 20px;
+ transition: all 0.5s ease-in-out;
+
+}
+section.hero_sec div.parts div.part.left img:nth-child(2):hover{
+    transform: skew(-8deg, -1deg);
+}
+section.hero_sec div.parts div.part.left img:nth-child(1){
+     transition: all 0.5s ease-in-out;
+}
+section.hero_sec div.parts div.part.left img:nth-child(1):hover{
+transform: skew(8deg, 1deg);
+}
+
 
 
 
