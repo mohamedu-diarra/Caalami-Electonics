@@ -35,6 +35,9 @@ section.nav{
     width: 100%;
     height: 100%;
     background-color: var(--color1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 section.nav nav{
     width: 100%;
@@ -42,6 +45,7 @@ section.nav nav{
     display: grid;
     grid-template-columns: 300px 2.5fr 1fr;
     grid-template-rows: repeat(1, auto);
+    position: relative;
     gap: 20px;
 }
 section.nav nav div.logo{
@@ -176,9 +180,9 @@ section.hero_sec div.parts div.part.right div.action button:hover{
     background-color: var(--color2);
     border: solid 1px var(--color5);
 }
-section.hero_sec div.parts div.part.left{
+/* section.hero_sec div.parts div.part.left{
   
-}
+} */
 section.hero_sec div.parts div.part.left img{
     width: 340px;
     height: 240px;
@@ -516,8 +520,149 @@ transform: skew(8deg, 1deg);
     color: var(--color5);
 
 }
+/* product design */
+section.products{
+    width: 100%;
+    height: 420px;
+    background-color: var(--color1);
+    margin-top: 12%;
+}
+section.products div.product{
+    width: 100%;
+    height: 100%;
+   
+}section.products div.product div.cinwaan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color5);
+    font-size: 30px;
+       font-family: "Nooca1aad";
+}
+section.products div.product div.cards{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
 
-
+}
+section.products div.product div.cards div.card{
+    width: 300px;
+    height: 300px;
+    background-color: var(--color2);
+    color: var(--color5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap column;
+    margin-top: 5%;
+    border-radius: 10px;
+}section.products div.product div.cards div.card img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 25px;
+}
+section.products div.product div.cards div.card div.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap column;
+}
+section.products div.product div.cards div.card div.content h3{
+    font-size: 18px;
+    font-family: "Nooca2aad";
+    
+}
+section.products div.product div.cards div.card div.content p.par{
+    font-size: 15px;
+    font-family: "Nooca2aad";
+}
+ /* footer */
+ section.footer{
+    width: 100%;
+    height: 300px;
+    background-color: var(--color2);
+ }
+ section.footer footer{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+ }
+ section.footer footer div.heading{
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: nowrap column;
+ }
+ section.footer footer div.heading h3{
+    font-size: 20px;
+    font-family: "Nooca2aad";
+    color: var(--color5);
+ }
+  section.footer footer div.heading p.desc{
+       width: 40%;
+  width: 450px;
+    font-family: "Nooca2aad";
+  font-size: 15px;
+  color: var(--color4);
+  line-height: 22px;
+  text-transform: capitalize;
+  margin: 15px 0px;
+  }
+  section.footer footer div.heading div.res{
+      font-family: "Nooca2aad";
+  font-size: 14px;
+  color: var(--color4);
+  line-height: 22px;
+  text-transform: capitalize;
+  margin: 15px 0px;
+  }
+   section.footer footer div.heading div.res p.reserved{
+   color: var(--color3);
+   }
+section.footer footer div.terms ul.fo{
+ height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: nowrap column;
+}
+section.footer footer div.terms ul.fo li{
+    margin-top: 10px;
+    list-style: none;
+}
+section.footer footer div.terms ul.fo li a{
+   
+ color: var(--color5);
+ font-family: "Nooca2aad";
+}
+section.footer footer div.f24 span{
+font-size: 40px;
+ line-height: 22px;
+    font-family: "Nooca2aad";
+    font-weight: 800;
+    color: var(--color5);
+}
+section.footer footer div.f24 p.p24{
+          font-family: "Nooca2aad";
+  font-size: 14px;
+  color: var(--color4);
+  line-height: 22px;
+  text-transform: capitalize;
+  margin: 15px 0px;
+}
+section.footer footer div.f24 p.socialmedia ion-icon{
+    font-size: 26px;
+    color: var(--color4);
+    margin-left: 10px;
+    cursor: pointer;
+}
 
 
 
