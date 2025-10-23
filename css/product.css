@@ -109,10 +109,66 @@ section.nav nav div.btnnav button.signup:hover{
     background-color: var(--color3);
     border: 1px solid var(--color5);
 }
+/* product design */
+section.products{
+    width: 100%;
+    height: 600px;
+    background-color:var(--color2);
+    border-top: 1px solid var(--color3);
+}
+section.products .product .cinwaan{
+    width: 100%;
+    padding:3% 0px;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Nooca1aad";
+    color: var(--color3);
+}
+section.products  .product  .cards{
+    margin: 5% 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 13px;
+}
+section.products  .product .cards .card{
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color3);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+section.products  .product .cards .card:hover{
+    box-shadow: 0px 0px 2px 2px var(--color5);
+    transform: translate(4px , -5px);
+}
+.products  .product .cards .card img{
+    width: 390px;
+    height: 300px;
+    object-fit: fit;
+    border-radius: 9px;
+}
+.products .product .cards .card h2{
+    font-family: "Nooca1aad";
+    font-size: 20px;
+    text-align: center;
+    color: var(--color3);
+}
+.products  .product .cards .card p{
+    font-family: "Nooca2aad";
+    font-size: 14px;
+    text-align: center;
+    color: var(--color5);
+}
  /* footer */
  section.footer{
     width: 100%;
-    height: 300px;
+    height: 100%;
     background-color: var(--color1);
     border-top: 0.3px solid var(--color3);
  }
