@@ -20,6 +20,12 @@
     --color4: #696E79;
     --color5: #ffff;
 }
+.container{
+    width: 100%;
+    height: 150px;
+    margin-left: auto;
+    margin-right:auto;
+}
 /* nav style */
 section.nav{
     width: 100%;
@@ -108,6 +114,108 @@ section.nav nav div.btnnav button.signup{
 section.nav nav div.btnnav button.signup:hover{
     background-color: var(--color3);
     border: 1px solid var(--color5);
+}
+/* Signup style */
+section.signup{
+    width: 100%;
+    height: 100%;
+    margin: 2% 0px;
+}
+.signup .container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.signup .container form{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    background-color: var(--color2);
+    border-radius:5px 5px 50px 5px ;
+    box-shadow: 0px 0px 20px 0.5px var(--color3);
+}
+.signup .container form h2{
+    color: var(--color3);
+    font-size: 20px;
+    font-family: "Nooca1aad";
+    background-color: #132046;
+}
+.signup .container form input{
+    border: none;
+    outline: none;
+    border: 1px solid var(--color3);
+    width: 60%;
+    height: 30px;
+    margin: 5px 0px;
+    font: 16px;
+    font-family: "Nooca2aad";
+    color: var(--color4);
+    padding: 0px 10px;
+    border-radius: 7px;
+}
+.signup .container form input#sub{
+    background-color: var(--color3);
+    color: var(--color5);
+    width: 25%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.signup .container form input#sub:hover{
+    background-color: var(--color2);
+    border: 1px solid var(--color5);
+    transform: translate(2px ,1px);
+}
+.signup .container form .logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.signup .container form .logos ion-icon{
+   font-size: 20px;
+    font-family: "Nooca1aad";
+    color: var(--color3);
+    padding: 3px 6px ;
+}
+.wel{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+     border-radius:5px 5px 5px 50px ;
+    box-shadow: 0px 0px 20px 0.5px var(--color3);
+  
+}
+.wel h2{
+    font-size: 30px;
+    font-family: "Nooca1aad";
+    color: var(--color3);
+}
+.wel h3{
+    font-size: 16px;
+    font-family: "Nooca2aad";
+    color: var(--color5);
+}
+.wel p{
+    font-size: 14px;
+    font-family: "nooca2aad";
+    color: var(--color4);
+}
+.wel p span{
+    color: var(--color3);
+    font-family: "Nooca1aad";
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s linear;
 }
  /* footer */
  section.footer{
