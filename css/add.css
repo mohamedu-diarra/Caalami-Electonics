@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "Nooca1aad";
+    src: url(/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "Nooca2aad";
+    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+}
+:root{
+    --color1: #181c26;
+    --color2: #132046;
+    --color3: #01C38D;
+    --color4: #696E79;
+    --color5: #ffff;
+}
+.container{
+    width: 100%;
+    height: 150px;
+    margin-left: auto;
+    margin-right:auto;
+}
+/* nav style */
+section.nav{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+section.nav nav{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 300px 2.5fr 1fr;
+    grid-template-rows: repeat(1, auto);
+    position: relative;
+    gap: 20px;
+}
+section.nav nav div.logo{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+section.nav nav div.logo img{
+    width: 150px;
+    height: 150px;
+    
+}
+section.nav nav ul.links{
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: nowrap row;
+}
+section.nav nav ul.links li{
+    margin-left: 40px;
+    list-style: none;
+}
+section.nav nav ul.links li a{
+ text-decoration: none;
+ color: var(--color4);
+ font-family: "Nooca2aad";
+ transition: all 0.5s ease-in-out;
+}
+section.nav nav ul.links li a:hover{
+    color: var(--color5);
+}
+section.nav nav div.btnnav{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.nav nav div.btnnav button{
+    width: 110px;
+    height: 40px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    background-color: var(--color2);
+    color: var(--color5);
+    font-family: "Nooca2aad";
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+section.nav nav div.btnnav button.cart{
+    background-color: var(--color3);
+    border-radius: 14px;
+    transition: all 0.5s ease-in-out;
+}
+section.nav nav div.btnnav button.cart ion-icon{
+font-size: 16px;
+}
+section.nav nav div.btnnav button.cart:hover{
+    background-color: var(--color1);
+    border: solid 1px var(--color5);
+}
+section.nav nav div.btnnav button.signup{
+ border-radius: 7px;
+ background-color: var(--color1);
+}
+section.nav nav div.btnnav button.signup:hover{
+    background-color: var(--color3);
+    border: 1px solid var(--color5);
+}
+ /* footer */
+ section.footer{
+    width: 100%;
+    height: 300px;
+    background-color: var(--color1);
+    border-top: 0.3px solid var(--color3);
+ }
+ section.footer footer{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+ }
+ section.footer footer div.heading{
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: nowrap column;
+ }
+ section.footer footer div.heading h3{
+    font-size: 20px;
+    font-family: "Nooca2aad";
+    color: var(--color5);
+ }
+  section.footer footer div.heading p.desc{
+       width: 40%;
+  width: 450px;
+    font-family: "Nooca2aad";
+  font-size: 15px;
+  color: var(--color4);
+  line-height: 22px;
+  text-transform: capitalize;
+  margin: 15px 0px;
+  }
+  section.footer footer div.heading div.res{
+      font-family: "Nooca2aad";
+  font-size: 14px;
+  color: var(--color4);
+  line-height: 22px;
+  text-transform: capitalize;
+  margin: 15px 0px;
+  }
+   section.footer footer div.heading div.res p.reserved{
+   color: var(--color3);
+   }
+section.footer footer div.terms ul.fo{
+ height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: nowrap column;
+}
+section.footer footer div.terms ul.fo li{
+    margin-top: 10px;
+    list-style: none;
+}
+section.footer footer div.terms ul.fo li a{
+ text-decoration: none;
+ color: var(--color5);
+ font-family: "Nooca2aad";
+}
+section.footer footer div.f24 span{
+font-size: 40px;
+ line-height: 22px;
+    font-family: "Nooca2aad";
+    font-weight: 800;
+    color: var(--color5);
+}
+section.footer footer div.f24 p.p24{
+          font-family: "Nooca2aad";
+  font-size: 14px;
+  color: var(--color4);
+  line-height: 22px;
+  text-transform: capitalize;
+  margin: 15px 0px;
+}
+section.footer footer div.f24 p.socialmedia ion-icon{
+    font-size: 26px;
+    color: var(--color4);
+    margin-left: 10px;
+    cursor: pointer;
+}
