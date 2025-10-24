@@ -1,5 +1,4 @@
-*{
-    margin: 0;
+   *{ margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -91,6 +90,56 @@ section.nav nav div.btnnav button{
 .container section.nav nav div.logo img{
     width: 100px;
     height: 100px;
+}
+
+
+
+
+
+
+
+/* media queries */
+
+/* xsml screen */
+@media (min-width: 480px) {
+    .container{
+        max-width: 400px;
+    }
+}
+
+/* sml screen */
+@media (min-width: 480px) and (max-width: 767px){
+    .container{
+        max-width: 700px;
+    }
+}
+
+/* md screen */
+@media (min-width: 767px) and (max-width: 992px){
+    .container{
+        max-width: 900px;
+    }
+}
+
+/* LG screen */
+@media (min-width: 992px) and (max-width: 1200px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+/* XlG screen */
+@media (min-width: 1200px) and (max-width: 1400px){
+    .container{
+        max-width: 1150px;
+    }
+}
+
+/* XXlG screen */
+@media (min-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
 }
 
 
