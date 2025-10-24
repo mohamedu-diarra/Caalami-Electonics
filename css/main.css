@@ -99,13 +99,10 @@ section.nav nav div.btnnav button{
     margin-left: 20px;
     cursor: pointer;
 }
-<<<<<<< HEAD
-=======
 section.nav nav div.btnnav button a{
     text-decoration: none;
     color: var(--color5);
 }
->>>>>>> 09deaa643f2eaa0ee6cfa31730023628127fddda
 section.nav nav div.btnnav button.cart{
     background-color: var(--color3);
     border-radius: 14px;
@@ -117,7 +114,7 @@ font-size: 16px;
 section.nav nav div.btnnav button.cart:hover{
     background-color: var(--color1);
     border: solid 1px var(--color5);
-<<<<<<< HEAD
+
 }
 section.nav nav div.btnnav button.signup{
  border-radius: 7px;
@@ -127,13 +124,11 @@ section.nav nav div.btnnav button.signup:hover{
     background-color: var(--color3);
     border: 1px solid var(--color5);
 }
-=======
-}section.nav nav div.btnnav button.signup{
+section.nav nav div.btnnav button.signup{
  border-radius: 7px;
  background-color: var(--color1);
 }
 
->>>>>>> 09deaa643f2eaa0ee6cfa31730023628127fddda
 /* hero style */
 section.hero_sec{
     width: 100%;
@@ -153,8 +148,6 @@ section.hero_sec div.parts{
 }
 section.hero_sec div.parts div.part{
     width: calc(95% / 2);
-    
-<<<<<<< HEAD
 }
 
 section.hero_sec div.parts div.part.right div.head h2{
@@ -600,7 +593,6 @@ section.products  .product .cards .card:hover{
     height: 300px;
     background-color: var(--color1);
     border-top: 0.3px solid var(--color3);
-=======
 }
 
 section.hero_sec div.parts div.part.right div.head h2{
@@ -1050,7 +1042,6 @@ section.products div.product div.cards div.card div.content p.par{
     width: 100%;
     height: 300px;
     background-color: var(--color2);
->>>>>>> 09deaa643f2eaa0ee6cfa31730023628127fddda
  }
  section.footer footer{
     width: 100%;
@@ -1105,11 +1096,7 @@ section.footer footer div.terms ul.fo li{
     list-style: none;
 }
 section.footer footer div.terms ul.fo li a{
-<<<<<<< HEAD
  text-decoration: none;
-=======
-   
->>>>>>> 09deaa643f2eaa0ee6cfa31730023628127fddda
  color: var(--color5);
  font-family: "Nooca2aad";
 }
@@ -1134,23 +1121,6 @@ section.footer footer div.f24 p.socialmedia ion-icon{
     margin-left: 10px;
     cursor: pointer;
 }
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 09deaa643f2eaa0ee6cfa31730023628127fddda
-
 
 
 
