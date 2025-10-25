@@ -28,24 +28,180 @@ body{
     min-height: 100vh;
     background:linear-gradient(90deg,var(--color2),var(--color3));
 }
-.container{
+.container-s{
     position: relative;
     width: 850px;
     height: 550px;
-    background:var(--color1);
+    background:var(--color5);
     margin: 20px;
     border-radius: 30px;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
     overflow: hidden;
 }
-.container h1{
+.container-s h1{
+    font-family: "Nooca1aad";
     font-size: 30px;
     margin: -10px 0px ;
 }
-.container p{
+.container-s p{
+    font-family: "Nooca2aad";
     font-size: 14.5px;
     margin: 15px 0px;
 }
+form{
+    width: 100%;
+}
+.form-box{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: var(--color5);
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 40px;
+    z-index: 1;
+    transform: 0.6s ease-in-out 1.2s,visiblity 0s 1s;
+    text-align: center;
+}
+.container-s.active .form-box{
+    right: 50%;
+}
+.form-box.register{
+    visibility: hidden;
+}
+.container-s.active .form-box.register{
+    visibility: visible;
+}
+.input-box{
+    position: relative;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    background-color: #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: #333;
+}
+.input-box input::placeholder{
+    font-weight: 400;
+    color: #888;
+}
+.input-box ion-icon{
+ right: 20px;
+ top: 50%;
+ position: absolute;
+ transform: translateY(-50%);
+ font-size: 20px;
+}
+.forget-password{
+    font-family: "Nooca2aad";
+    margin: -15px 0 15px;
+}
+.forget-password a{
+    font-size: 14.5px;
+    color: var(--color3);
+}
+.btn{
+    width: 100%;
+    height: 48px;
+    background-color: var(--color2);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--color5);
+    font-weight: 400;
+    font-family: "Nooca2aad";
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    display: inline-flex;
+    padding: 10px;
+    border: 1px solid var(--color3);
+    background-color: var(--color2);
+    border-radius:5px ;
+    color: var(--color5);
+    font-size: 17px;
+    margin: 0 8px ;
+}
+.toggle-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.toggle-box::before{
+    content: '';
+    position: absolute;
+    left: -250%;
+    width: 300%;
+    height: 100%;
+    background-color: var(--color3);
+    border-radius: 150px;
+    z-index: 2;
+    transition: 1.8s ease-in-out;
+}
+.container-s.active .toggle-box::before{
+    left: 50%;
+}
+.toggle-panel{
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s ease-in-out;
+}
+.toggle-panel.toggle-left{
+    transition-delay: 1.2s;
+    left: 0;
+}
+.container-s.active .toggle-panel.toggle-left{
+    left: -50%;
+    transition-delay: 0.6s ;
+}
+.toggle-panel.toggle-right{
+    right: -50%;
+    transition-delay: 0.5s;
+}
+.container-s.active .toggle-panel.toggle-right{
+    right: 0;
+    transition-delay: 1.2s;
+}
+.toggle-panel p{
+    margin-bottom: 20px;
+}
+.toggle-panel .btn{
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    background-color: var(--color2);
+    border: 1px solid var(--color5);
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
 /* .container{ 
     width: 100%;
     height: 150px;
@@ -140,108 +296,6 @@ section.nav nav div.btnnav button.signup{
 section.nav nav div.btnnav button.signup:hover{
     background-color: var(--color3);
     border: 1px solid var(--color5);
-} */
-/* Signup style */
-/* section.signup{
-    width: 100%;
-    height: 100%;
-    margin: 2% 0px;
-}
-.signup .container{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-}
-.signup .container form{
-    width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap column;
-    background-color: var(--color2);
-    border-radius:5px 5px 50px 5px ;
-    box-shadow: 0px 0px 20px 0.5px var(--color3);
-}
-.signup .container form h2{
-    color: var(--color3);
-    font-size: 20px;
-    font-family: "Nooca1aad";
-    background-color: #132046;
-}
-.signup .container form input{
-    border: none;
-    outline: none;
-    border: 1px solid var(--color3);
-    width: 60%;
-    height: 30px;
-    margin: 5px 0px;
-    font: 16px;
-    font-family: "Nooca2aad";
-    color: var(--color4);
-    padding: 0px 10px;
-    border-radius: 7px;
-}
-.signup .container form input#sub{
-    background-color: var(--color3);
-    color: var(--color5);
-    width: 25%;
-    cursor: pointer;
-    transition: all 0.3s linear;
-}
-.signup .container form input#sub:hover{
-    background-color: var(--color2);
-    border: 1px solid var(--color5);
-    transform: translate(2px ,1px);
-}
-.signup .container form .logos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.signup .container form .logos ion-icon{
-   font-size: 20px;
-    font-family: "Nooca1aad";
-    color: var(--color3);
-    padding: 3px 6px ;
-}
-.wel{
-    width: 100%;
-    height: 100%;
-    background-color: var(--color2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap column;
-     border-radius:5px 5px 5px 50px ;
-    box-shadow: 0px 0px 20px 0.5px var(--color3);
-  
-}
-.wel h2{
-    font-size: 30px;
-    font-family: "Nooca1aad";
-    color: var(--color3);
-}
-.wel h3{
-    font-size: 16px;
-    font-family: "Nooca2aad";
-    color: var(--color5);
-}
-.wel p{
-    font-size: 14px;
-    font-family: "nooca2aad";
-    color: var(--color4);
-}
-.wel p span{
-    color: var(--color3);
-    font-family: "Nooca1aad";
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s linear;
 } */
  /* footer */
  /* section.footer{
