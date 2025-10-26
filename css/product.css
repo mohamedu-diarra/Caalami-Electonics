@@ -95,6 +95,11 @@ section.nav nav div.btnnav button{
     margin-left: 20px;
     cursor: pointer;
 }
+section.nav nav div.btnnav button a{
+  text-decoration: none;
+  font-family: "Nooca2aad";
+  color: var(--color5);
+}
 section.nav nav div.btnnav button.cart{
     background-color: var(--color3);
     border-radius: 14px;
