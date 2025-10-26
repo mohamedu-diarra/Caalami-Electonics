@@ -194,7 +194,20 @@ form{
     border: 1px solid var(--color5);
     box-shadow: none;
 }
-
+.sweet-alert {
+  background-color: var(--color2)!important;
+}
+.sweet-alert h2{
+    color: var(--color5)!important;
+}
+.sweet-alert p{
+      color: var(--color5)!important; 
+}
+ .sa-confirm-button-container button.confirm{
+   background-color: var(--color3) !important;
+   border: 2px solid var(--color5);
+   color: var(--color5);
+}
 
 
 

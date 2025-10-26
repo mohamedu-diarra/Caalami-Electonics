@@ -6,7 +6,10 @@
     <title>Caalami Elecronics</title>
     <!-- css link -->
      <link rel="stylesheet" href="/css/signup.css"/>
-</head>
+     <!-- font-awesome link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+    </head>
 <body>
        <!-- nav section -->
     <!-- <section class="nav">
@@ -36,7 +39,7 @@
  <div class="container-s">
      <!-- login-form -->
    <div class="form-box  login">
-    <form action="#">
+    <form action="#" id="form_in" >
         <h1>Login</h1>
         <div class="input-box">
             <ion-icon name="person"></ion-icon>
@@ -60,21 +63,21 @@
    </div>
    <!-- Register-form -->
     <div class="form-box  register">
-         <form action="#">
+         <form action="#" id="form_info">
         <h1>Register</h1>
         <div class="input-box">
             <ion-icon name="person"></ion-icon>
-            <input type="text" placeholder="Enter your name" required/>
+            <input type="text" name="username" placeholder="Enter your name"/>
         </div>
          <div class="input-box">
          <ion-icon name="mail"></ion-icon>
-            <input type="Email" placeholder="Enter your email" required/>
+            <input type="Email" name="useremail" placeholder="Enter your email"/>
         </div>
          <div class="input-box">
           <ion-icon name="lock-closed"></ion-icon>
-            <input type="password" placeholder=" Enter password" required/>
+            <input type="password" name="userpassword" placeholder=" Enter password"/>
         </div>
-        <button  type="submit"  class="btn">Register</button>
+        <button  type="submit"  class="btn  reg-sub">Register</button>
         <p>Or login with social-platforms</p>
         <div class="social-icons">
             <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -89,7 +92,7 @@
            <div class="toggle-panel toggle-left">
             <h1>Hello , welcome !</h1>
             <p> Don't have Account ?</p>
-            <button class="btn register-btn">Register</button>
+        <button class="btn register-btn ">Register</button>
            </div>
          <!-- toggle-right -->
             <div class="toggle-panel toggle-right">
@@ -138,5 +141,6 @@
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script type="module" src="/JS/signup.js"></script>
+<script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
 </body>
 </html>
