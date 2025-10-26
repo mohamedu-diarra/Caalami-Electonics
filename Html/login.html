@@ -5,200 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caalami Elecronics</title>
     <!-- css link -->
-     <link rel="stylesheet" href="/css/login.css"/>
+     <link rel="stylesheet" href="/css/signup.css"/>
+       <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>   
 </head>
 <body>
-       <!-- nav section -->
-    <section class="nav">
-        <div class="container">
-            <nav>
-                <div class="logo">
-
-               <img src="/sawiro/CAALAMI2.png" alt="logo">
-
-
-                </div>
-                <ul class="links">
-                    <li><a href="/Html/index.html">Home</a></li>
-                     <li><a href="/Html/About.html">About Us</a></li>
-                      <li><a href="/Html/product.html">Products</a></li>
-                       <li><a href="/Html/contact.html">Contact Us</a></li>
-                       
-                </ul>
-                 <div class="btnnav">
-                    <button class="cart">Add cart <ion-icon name="cart-sharp"></ion-icon></button>
-                    <button class="signup">Sign Up</button>
-                </div>
-            </nav>
+        <!-- Signup -->
+ <div class="container-s">
+     <!-- login-form -->
+   <div class="form-box  login">
+    <form action="#" id="form_in" >
+        <h1>Login</h1>
+      <div class="input-box">
+            <ion-icon name="person"></ion-icon>
+            <input type="text" name="username" placeholder="Enter your name"/>
         </div>
-    </section>
-    <!-- hero section -->
-     <section class="hero_sec">
-        <div class="container">
-            <div class="parts">
-                <div class="part right">
-               <div class="head">
-                <h2>Kusoo Dhawoow Meherada <span>Caalami Electronics</span></h2>
-               </div>
-               <p class="desc">meherada waxaa kugu diyaar ah dhamaan agabka Electronics ka kuwaas oo leh damaanad</p>
-               <div class="action">
-                <button>Shop Now <ion-icon name="cart-sharp"></ion-icon></button>
-               </div>
-                </div>
-                <div class="part left">
-                   <img src="/sawiro/heroimage1.jpg" alt="hero img">
-                   <img src="/sawiro/heroiamge2.jpg" alt="hero">
-                </div>
-
-            </div>
+ <div class="input-box">
+          <ion-icon name="lock-closed"></ion-icon>
+            <input type="password" name="userpassword" placeholder=" Enter password"/>
         </div>
-     </section>
-<!-- About-section -->
-     <section class="about">
-     <div class="top">
-    <h1>About us</h1>
-    <h3>At Caalami-Electronics, we're passionate about connecting people<br/>
-        with the latest in technology from high-performance laptops and smartphones<br/>
-        to smart home devices and accessories all at unbeatable value and trusted quality."
-    </h3>
+        <div class="forget-password">
+            <a href="#">Forget password</a>
         </div>
-    <div class="down">
-        <div class="dl"><h1>What we Accomplish ?</h1>
-        <p>We specialize in high-quality electronic products — from smartphones, laptops, 
-            and gaming gear to smart home devices and accessories. Our focus is on offering 
-            trusted brands, competitive prices,and excellent customer service to ensure every
-             customer gets the best value and experience.</p></div>
-         <div class="dr">
-                <img src="/sawiro/about-person.jpg" alt="About-person">
-            </div>
+        <button  type="submit" class="btn">Login</button>
+        <p>Or login with social-platforms</p>
+        <div class="social-icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"></ion-icon><ion-icon name="logo-google"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </form>
+   </div>
+   <!-- Register-form -->
+    <div class="form-box  register">
+         <form action="#" id="form_info">
+        <h1>Register</h1>
+        <div class="input-box">
+            <ion-icon name="person"></ion-icon>
+            <input type="text" name="username" placeholder="Enter your name"/>
+        </div>
+         <div class="input-box">
+         <ion-icon name="mail"></ion-icon>
+            <input type="Email" name="useremail" placeholder="Enter your email"/>
+        </div>
+         <div class="input-box">
+          <ion-icon name="lock-closed"></ion-icon>
+            <input type="password" name="userpassword" placeholder=" Enter password"/>
+        </div>
+        <button  type="submit"  class="btn  reg-sub">Register</button>
+        <p>Or login with social-platforms</p>
+        <div class="social-icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"></ion-icon><ion-icon name="logo-google"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </form>
     </div>
-    </section>
-    <!--our team-->
-    <section class="meet">
-      <h2>Meet our team</h2>
-    <div class="pics">
-        <div class="sm"><img src="/sawiro/ALex.jpg" alt="ALEX"/>
-        <h3>Title : CEO </h3>
-        <p>PHD of human resource and pulic management.</p></div>
-        <div class="sm"><img src="/sawiro/suusaan.jpg" alt="suusan"/>
-        <h3>Title : Sales</h3>
-        <p>Sales Expert in china , 3 years of work and experience .</p></div>
-        <div class="sm"><img src="/sawiro/leechung.jpg" alt="leechung"/>
-        <h3>Title : Internship</h3>.
-        <p>Graduated in 2023 in IT , Works as internship .</p></div>
+    <!-- Toggle-box -->
+     <div class="toggle-box">
+        <!-- toggle-left -->
+           <div class="toggle-panel toggle-left">
+            <h1>Hello , welcome !</h1>
+            <p> Don't have Account ?</p>
+        <button class="btn register-btn ">Register</button>
+           </div>
+         <!-- toggle-right -->
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have Account !</p>
+                <button class="btn login-btn"> Login</button>
+            </div>
+     </div>
     </div>
-    </section>
-    <!--Contact us -->
-    <section class="contact">
-        <div class="p-contact">
-        <h2> Contact Us </h2>
-        <p>Where ever you're just call us or email us </p>
-        <div class="form">
-            <form >
-                <div class="tea">
-                <input type="text"  id="name" placeholder="Name">
-                <input type="tel" id="phone" placeholder="phone">
-               </div> 
-                <input type="email" id="email" placeholder="Email">
-                <textarea id="message" placeholder="Leave your message" width="150px" height="150px"></textarea>
-                <input type="submit" id="submit" >
-            </form>
-            <div class="set">
-                <h2>Our Newsletters</h2>
-            <input type="email" placeholder="Email"/>
-            <button class="submit">Submit</button>
-        </div>
-        </div>
-        <div class="partt">
-            <div class="par">
-                <h2><ion-icon name="cash-outline"></ion-icon> Paying methods</h2>
-                <p>Payless , get the full oulined product</p>
-                </div>
-            <div class="par">
-                  <h2><ion-icon name="mail-outline"></ion-icon> mail@Askus.com</h2>
-                <p>Online for 24hrs;just email us and our team will help you </p>
-            </div>
-            <div class="par">
-                  <h2><ion-icon name="location-outline"></ion-icon> Our location</h2>
-                <p>on the road of Wadada Muj Cali Hayaan </p>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- product section -->
-      <section class="products">
-        <div class="container">
-            <div class="product">
-                <div class="cinwaan">
-                    <h2>Our Products</h2>
-                </div>
-                <div class="cards">
-            <div class="card">
-            <img src="/sawiro/suusaan.jpg" alt="">
-            <div class="content">
-                <h2><a href="#"></a>Mobile</h2>
-                <p class="par">The perfect mobile phone that matches you is here</p>
-
-            </div>
-           </div>
-            <div class="card">
-            <img src="/sawiro/suusaan.jpg" alt="">
-            <div class="content">
-                <h2><a href="#"></a>Mobile</h2>
-                <p class="par">The perfect mobile phone that matches you is here</p>
-
-            </div>
-           </div> 
-            <div class="card">
-            <img src="/sawiro/suusaan.jpg" alt="">
-            <div class="content">
-                <h2><a href="#"></a>Mobile</h2>
-                <p class="par">The perfect mobile phone that matches you is here</p>
-
-            </div>
-           </div>
-                </div>
-                
-            </div>
-        </div>
-      </section>
-   <!-- footer -->
-    <section class="footer">
-        <div class="container">
-            <footer>
-                <div class="heading">
-                    <h3>Caalami Electronics</h3>
-                     <p class="desc">meherada waxaa kugu diyaar ah dhamaan agabka Electronics ka kuwaas oo leh damaanad</p>
-
-
-                <div class="res">
-                    <p>© Caalami Electronics - 2025</p>
-                    <p class="reserved">
-                        All rights reserved
-                    </p>
-                </div>
-                </div>
-                <div class="terms">
-                  <ul class="fo">
-                    <li><a href="#"><ion-icon name="bookmark"></ion-icon>Terms & Conditions</a></li>
-                    <li><a href="#"><ion-icon name="person"></ion-icon>Create New Account</a></li>
-                    <li><a href="#"><ion-icon name="log-in"></ion-icon>Login</a></li>
-                  </ul>
-                </div>
-                <div class="f24">
-                    <span>24/7</span>
-                    <p class="p24">
-                        Get in Touch with the Platform Administration Below
-                    </p>
-                    <p class="socialmedia">
-                        <ion-icon name="logo-facebook"></ion-icon>  <ion-icon name="logo-whatsapp"></ion-icon>  <ion-icon name="logo-instagram"></ion-icon>
-                    </p>
-                </div>
-            </footer>
-        </div>
-    </section>
     <!-- icon script -->
+     <script  src="/JS/login.js" type="module"></script>
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
 </body>
 </html>
